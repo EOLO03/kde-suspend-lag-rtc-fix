@@ -118,6 +118,8 @@ These all measured healthy while the system was lagging, so they are probably no
 
 ## References
 
+- **Bug report:** [Red Hat Bugzilla 2543517](https://bugzilla.redhat.com/show_bug.cgi?id=2543517)
+- **Discussion:** [Fedora Discussion thread](https://discussion.fedoraproject.org/t/203245)
 - [Laptop framerate tanks after waking from sleep (KDE) – Fedora Discussion](https://discussion.fedoraproject.org/t/laptop-framerate-tanks-after-waking-from-sleep-kde/124812)
 - [Fedora 44 KDE Lagging – Fedora Discussion](https://discussion.fedoraproject.org/t/fedora-44-kde-lagging/197952)
 - [Screen refresh rate drop after sleep – KDE Discuss](https://discuss.kde.org/t/screen-refresh-rate-drop-after-sleep/17555)
