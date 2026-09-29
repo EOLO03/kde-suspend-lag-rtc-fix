@@ -1,6 +1,8 @@
 # Desktop laggy after suspend until reboot? Check your clock.
 
-If your Linux desktop (seen on Fedora 44 KDE Plasma 6.7, Wayland) becomes **slow and choppy after waking from sleep**, with every animation and even the mouse cursor stuttering, and **only a reboot fixes it**, the cause may have nothing to do with your GPU, compositor or kernel.
+> **Not KDE-specific.** Despite the repository name, this affects any desktop that times its animations against the system clock. It has been seen on both **KDE Plasma** and **GNOME**.
+
+If your Linux desktop (seen on Fedora 44 with KDE Plasma and with GNOME, Wayland) becomes **slow and choppy after waking from sleep**, with every animation and even the mouse cursor stuttering, and **only a reboot fixes it**, the cause may have nothing to do with your GPU, compositor or kernel.
 
 It may be your **system clock running ~8% slow** while the NTP daemon tries to correct a multi-hour offset.
 
@@ -47,7 +49,7 @@ chronyd[1511]: System clock wrong by -10799.997000 seconds
 1. With the RTC in local time, the system clock came back from suspend shifted by the UTC offset (3 hours here).
 2. chrony noticed the offset. Its default Fedora config (`makestep 1.0 3`) only allows stepping the clock during the first 3 updates after boot. After that it **slews** the clock instead.
 3. To slew, the kernel slows the clock down by up to ~8.3%. On the affected machine, the kernel `tick` was **9167** instead of 10000. `CLOCK_MONOTONIC` then ran at **0.917×** real speed. At that rate a 3-hour offset takes about **36 hours** to correct.
-4. Animations are timed against that slowed clock, while the display still refreshes at a real 60 Hz. The compositor's frame timing drifts out of step with the panel, so everything is both slower and choppier.
+4. Animations are timed against that slowed clock, while the display still refreshes at a real 60 Hz. The compositor's frame timing (KWin on KDE, Mutter on GNOME) drifts out of step with the panel, so everything is both slower and choppier.
 5. On reboot chrony is allowed to step the clock at once, which is why a reboot "fixes" it.
 
 ## Fix
@@ -109,12 +111,13 @@ These all measured healthy while the system was lagging, so they are probably no
 - CPU frequency, thermal throttling and PROCHOT.
 - Scheduler and timer wake-up latency: about 0.1–0.2 ms on all cores.
 - Clocksource: still TSC.
-- KWin itself: hardware-accelerated. Disabling blur, toggling DPMS and re-setting the display mode did not help.
+- The compositor itself (KWin, measured on the KDE machine): hardware-accelerated. Disabling blur, toggling DPMS and re-setting the display mode did not help.
 
 ## Tested on
 
-- Lenovo ThinkBook 16p G5 (i9-14900HX, Intel UHD iGPU + RTX 4060 in integrated mode), Fedora 44, kernel 7.2.7, KDE Plasma 6.7.5, Mesa 26.2.3, chrony, Windows dual-boot.
-- The same symptom was seen on a Huawei laptop (13th-gen Intel i9, no discrete GPU) running Fedora 44 KDE.
+- Lenovo ThinkBook 16p G5 (i9-14900HX, Intel UHD iGPU + RTX 4060 in integrated mode), Fedora 44, kernel 7.2.7, KDE Plasma 6.7.5, Mesa 26.2.3, chrony, Windows dual-boot. All measurements in EVIDENCE.md are from this machine.
+- The same machine showed the same symptom earlier while it was running **GNOME** (not measured at the time).
+- The same symptom was seen on a Huawei laptop (13th-gen Intel i9, no discrete GPU) running Fedora 44 with **GNOME**.
 
 ## References
 
@@ -129,7 +132,7 @@ These all measured healthy while the system was lagging, so they are probably no
 
 ## Türkçe özet
 
-Uykudan uyandıktan sonra KDE kasıyor ve sadece yeniden başlatınca düzeliyorsa, sebep saat olabilir. Bu durum özellikle bilgisayarda Windows da kuruluysa görülür.
+Uykudan uyandıktan sonra masaüstü (KDE veya GNOME fark etmez) kasıyor ve sadece yeniden başlatınca düzeliyorsa, sebep saat olabilir. Bu durum özellikle bilgisayarda Windows da kuruluysa görülür.
 
 Donanım saati yerel saatte tutulduğunda, uyanışta sistem saati saat dilimi kadar (Türkiye'de 3 saat) kayabiliyor. chrony bu farkı saati yaklaşık %8 yavaşlatarak düzeltmeye çalışıyor ve bu yaklaşık 36 saat sürüyor. Bu süre boyunca bütün animasyonlar yavaş ve takılarak çalışıyor.
 
