@@ -100,6 +100,8 @@ chrony will then step any offset larger than 1 second at any time, instead of sl
 
 ## Things that were ruled out
 
+Full raw measurements are in [EVIDENCE.md](EVIDENCE.md).
+
 These all measured healthy while the system was lagging, so they are probably not your problem if the checks above match:
 
 - GPU frequency and throttling (i915): the GPU was 23% busy during animations.
