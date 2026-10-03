@@ -46,11 +46,41 @@ chronyd[1511]: System clock wrong by -10799.997000 seconds
 
 ## What is going on
 
-1. With the RTC in local time, the system clock came back from suspend shifted by the UTC offset (3 hours here).
+1. With the RTC in local time, the system clock came back from suspend shifted by the UTC offset (3 hours here). This is a kernel bug, see [Root cause](#root-cause-a-kernel-bug-in-the-resume-path) below.
 2. chrony noticed the offset. Its default Fedora config (`makestep 1.0 3`) only allows stepping the clock during the first 3 updates after boot. After that it **slews** the clock instead.
 3. To slew, the kernel slows the clock down by up to ~8.3%. On the affected machine, the kernel `tick` was **9167** instead of 10000. `CLOCK_MONOTONIC` then ran at **0.917×** real speed. At that rate a 3-hour offset takes about **36 hours** to correct.
 4. Animations are timed against that slowed clock, while the display still refreshes at a real 60 Hz. The compositor's frame timing (KWin on KDE, Mutter on GNOME) drifts out of step with the panel, so everything is both slower and choppier.
 5. On reboot chrony is allowed to step the clock at once, which is why a reboot "fixes" it.
+
+## Root cause: a kernel bug in the resume path
+
+The 3-hour shift in step 1 comes from the kernel, not from chrony or the desktop.
+
+On resume the kernel adds the time spent asleep to the system clock. It has three sources for that, in order of preference: a clocksource that keeps counting during suspend, the "persistent clock" (on x86 the CMOS RTC, read with a resolution of one second), and the RTC driver.
+
+- `rtc_suspend()` saves the RTC time and the system time so that `rtc_resume()` can compare them later. On a machine with a persistent clock, which is every x86 PC, it returns early and saves nothing.
+- `rtc_resume()` is skipped only if the timekeeping core has already added the sleep time. With suspend-to-idle (s2idle) the timekeeping core is frozen and unfrozen on every pass through the idle loop. If the last freeze is shorter than a second, the CMOS clock has not moved, so nothing is added and `rtc_resume()` runs.
+- With nothing saved, `rtc_resume()` computes `RTC time − system time` and adds it as "sleep time". With the RTC in UTC that is about zero. With the RTC in local time east of UTC it is the UTC offset. West of UTC the value is negative and is not added.
+
+So the jump needs three things: s2idle, the RTC in local time east of UTC, and a resume whose last freeze lasted less than a second. The last one is a matter of timing, which is why it only happens now and then (2 out of 35 suspend cycles in normal use on the affected machine).
+
+The two conditions have been out of step since a change made in 2015, so the bug is not new. It only becomes visible on machines that keep the RTC in local time.
+
+### Reproducing it
+
+[`kernel-repro/repro.sh`](kernel-repro/repro.sh) triggers the jump on purpose. It needs root and an RTC that currently holds local time. It stops chronyd, shifts the system clock by less than a second relative to the RTC, suspends to idle with a wake alarm a few seconds ahead, and puts a kprobe on `timekeeping_inject_sleeptime64()` to record who adds the bogus sleep time. It restores the clock and restarts chronyd when it exits.
+
+| Kernel | Control cycles (clock not shifted) | Test cycles (clock shifted) |
+|---|---|---|
+| 7.2.8-200.fc44 | 0 of 8 jumped | 7 of 30 jumped |
+| 7.3-rc5, unpatched | 0 of 8 jumped | 4 of 30 jumped |
+| 7.3-rc5, patched | 0 of 8 jumped | 0 of 30 jumped |
+
+Every jump was 10797 to 10799 seconds, and every one came from `rtc_resume()`. In all of them timekeeping had been frozen for less than 0.9 seconds. On the patched kernel 6 cycles met that condition and none jumped. The logs and traces are in [`kernel-repro/`](kernel-repro/).
+
+### Kernel patch
+
+A fix was sent to the RTC and timekeeping maintainers on 3 October 2026: [\[PATCH\] rtc: class: Do not inject sleep time without a suspend snapshot](https://lore.kernel.org/all/20261003163138.14221-1-sabri.alperen03@gmail.com/). It is under review and not merged yet. Until a fixed kernel reaches your distribution, use the fix below.
 
 ## Fix
 
@@ -121,6 +151,7 @@ These all measured healthy while the system was lagging, so they are probably no
 
 ## References
 
+- **Kernel patch:** [rtc: class: Do not inject sleep time without a suspend snapshot](https://lore.kernel.org/all/20261003163138.14221-1-sabri.alperen03@gmail.com/) (linux-rtc, under review)
 - **Bug report:** [Red Hat Bugzilla 2543517](https://bugzilla.redhat.com/show_bug.cgi?id=2543517)
 - **Discussion:** [Fedora Discussion thread](https://discussion.fedoraproject.org/t/203245)
 - [Laptop framerate tanks after waking from sleep (KDE) – Fedora Discussion](https://discussion.fedoraproject.org/t/laptop-framerate-tanks-after-waking-from-sleep-kde/124812)
@@ -135,6 +166,8 @@ These all measured healthy while the system was lagging, so they are probably no
 Uykudan uyandıktan sonra masaüstü (KDE veya GNOME fark etmez) kasıyor ve sadece yeniden başlatınca düzeliyorsa, sebep saat olabilir. Bu durum özellikle bilgisayarda Windows da kuruluysa görülür.
 
 Donanım saati yerel saatte tutulduğunda, uyanışta sistem saati saat dilimi kadar (Türkiye'de 3 saat) kayabiliyor. chrony bu farkı saati yaklaşık %8 yavaşlatarak düzeltmeye çalışıyor ve bu yaklaşık 36 saat sürüyor. Bu süre boyunca bütün animasyonlar yavaş ve takılarak çalışıyor.
+
+Kaymanın kaynağı kernel'deki bir hata: s2idle uyanışında son donma bir saniyeden kısa sürerse kernel, donanım saati ile sistem saati arasındaki farkı "uyku süresi" sanıp sistem saatine ekliyor. Hata `kernel-repro/repro.sh` ile isteyerek tetiklenebiliyor ve düzeltme yaması kernel bakımcılarına gönderildi (inceleme aşamasında).
 
 - Anlık çözüm: `sudo chronyc makestep`
 - Kalıcı çözüm: Linux'ta `sudo timedatectl set-local-rtc 0`, Windows'ta yukarıdaki `reg add` komutu.

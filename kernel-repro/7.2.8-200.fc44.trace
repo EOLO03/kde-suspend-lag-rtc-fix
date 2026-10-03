@@ -1,0 +1,1423 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 1278/1278   #P:32
+#
+#                                _-----=> irqs-off/BH-disabled
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| / _-=> migrate-disable
+#                              |||| /     delay
+#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION
+#              | |         |   |||||     |         |
+            bash-242290  [025] ...1. 275642671183065: tracing_mark_write: cal 1791040253.334578017
+            bash-242290  [004] ...1. 275645102624348: tracing_mark_write: cal 1791040254.339566251
+            bash-242290  [014] ...1. 275648222631737: tracing_mark_write: cycle control 1
+            bash-242290  [031] ..... 275648265938123: suspend_resume: suspend_enter[1] begin
+            bash-242290  [031] ..... 275648265941622: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [028] ..... 275648332329671: suspend_resume: sync_filesystems[0] end
+            bash-242290  [020] ..... 275648767362006: suspend_resume: freeze_processes[0] begin
+            bash-242290  [003] ..... 275648782404171: suspend_resume: freeze_processes[0] end
+            bash-242290  [003] ..... 275648782409008: suspend_resume: suspend_enter[1] end
+            bash-242290  [003] ..... 275648782540825: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [003] ..... 275648907318657: suspend_resume: dpm_prepare[2] end
+            bash-242290  [003] ..... 275648907350755: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [008] ..... 275652581340159: suspend_resume: dpm_suspend[2] end
+            bash-242290  [008] ..... 275652581386356: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275655279218159: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275655280644829: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [014] ..... 275658026027292: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 275658197806012: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [020] d..2. 275658198198050: suspend_resume: timekeeping_freeze[20] begin
+          <idle>-0       [000] dN.2. 275658199480355: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [006] ..... 275658199872754: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 275658200340476: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [011] d..2. 275658200719882: suspend_resume: timekeeping_freeze[11] begin
+          <idle>-0       [011] dN.2. 275658201943838: suspend_resume: timekeeping_freeze[11] end
+          <idle>-0       [011] d..2. 275658202003109: suspend_resume: timekeeping_freeze[11] begin
+          <idle>-0       [000] dN.2. 275658203095964: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275658203226526: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 275658809411087: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [006] ..... 275658809795105: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 275658818550280: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [014] ..... 275660254325011: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [014] ..... 275660254921826: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [008] ..... 275660260689844: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [008] ..... 275660260695612: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 275662966881940: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 275662966901365: suspend_resume: dpm_complete[16] begin
+            bash-242290  [005] ..... 275663000410977: suspend_resume: dpm_complete[16] end
+            bash-242290  [005] ..... 275663000435616: suspend_resume: console_resume_all[1] begin
+            bash-242290  [005] ..... 275663000920332: suspend_resume: console_resume_all[1] end
+            bash-242290  [005] ..... 275663000925594: suspend_resume: thaw_processes[0] begin
+            bash-242290  [005] ..... 275663014157825: suspend_resume: thaw_processes[0] end
+            bash-242290  [014] ...1. 275668783937871: tracing_mark_write: cycle control 2
+            bash-242290  [023] ..... 275668831748312: suspend_resume: suspend_enter[1] begin
+            bash-242290  [023] ..... 275668831751840: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [023] ..... 275668866712727: suspend_resume: sync_filesystems[0] end
+            bash-242290  [023] ..... 275668877883515: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 275668892896274: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 275668892901147: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 275668893215479: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 275669020331418: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 275669020366615: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [017] ..... 275669785853306: suspend_resume: dpm_suspend[2] end
+            bash-242290  [017] ..... 275669785891138: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275672483318064: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275672484646860: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [004] ..... 275675228796241: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 275675238905605: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [023] d..2. 275675239292365: suspend_resume: timekeeping_freeze[23] begin
+          <idle>-0       [008] dN.2. 275675240416647: suspend_resume: timekeeping_freeze[8] end
+          <idle>-0       [008] d..2. 275675240462361: suspend_resume: timekeeping_freeze[8] begin
+          <idle>-0       [001] dN.2. 275683011605542: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 275683012194202: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 275683021311759: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [004] ..... 275684596416016: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [004] ..... 275684597244602: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275684604399541: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275684604404841: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 275687312498137: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 275687312512846: suspend_resume: dpm_complete[16] begin
+            bash-242290  [008] ..... 275687342713504: suspend_resume: dpm_complete[16] end
+            bash-242290  [008] ..... 275687342736058: suspend_resume: console_resume_all[1] begin
+            bash-242290  [017] ..... 275687343187740: suspend_resume: console_resume_all[1] end
+            bash-242290  [017] ..... 275687343194249: suspend_resume: thaw_processes[0] begin
+            bash-242290  [012] ..... 275687355036367: suspend_resume: thaw_processes[0] end
+            bash-242290  [002] ...1. 275693221628791: tracing_mark_write: cycle control 3
+            bash-242290  [015] ..... 275693272888585: suspend_resume: suspend_enter[1] begin
+            bash-242290  [015] ..... 275693272892564: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [015] ..... 275693313201474: suspend_resume: sync_filesystems[0] end
+            bash-242290  [015] ..... 275693549147580: suspend_resume: freeze_processes[0] begin
+            bash-242290  [028] ..... 275693566788122: suspend_resume: freeze_processes[0] end
+            bash-242290  [028] ..... 275693566791711: suspend_resume: suspend_enter[1] end
+            bash-242290  [028] ..... 275693566911494: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [028] ..... 275693665217418: suspend_resume: dpm_prepare[2] end
+            bash-242290  [028] ..... 275693665256335: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 275694407720866: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 275694407748167: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275697106022120: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275697107244609: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [002] ..... 275699852743628: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 275699863648258: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [028] d..2. 275699864070082: suspend_resume: timekeeping_freeze[28] begin
+          <idle>-0       [000] dN.2. 275699865236051: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275699865274812: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 275699945777720: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 275699946383359: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 275699956024361: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 275701533233932: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [004] ..... 275701534318190: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275701541212103: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275701541217753: suspend_resume: dpm_resume[16] begin
+            bash-242290  [012] ..... 275704251334408: suspend_resume: dpm_resume[16] end
+            bash-242290  [012] ..... 275704251344459: suspend_resume: dpm_complete[16] begin
+            bash-242290  [012] ..... 275704281127693: suspend_resume: dpm_complete[16] end
+            bash-242290  [012] ..... 275704281150387: suspend_resume: console_resume_all[1] begin
+            bash-242290  [012] ..... 275704281629624: suspend_resume: console_resume_all[1] end
+            bash-242290  [012] ..... 275704281634825: suspend_resume: thaw_processes[0] begin
+            bash-242290  [024] ..... 275704293251032: suspend_resume: thaw_processes[0] end
+            bash-242290  [008] ...1. 275711364116919: tracing_mark_write: cycle control 4
+            bash-242290  [028] ..... 275711414312361: suspend_resume: suspend_enter[1] begin
+            bash-242290  [028] ..... 275711414315528: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [028] ..... 275711455375013: suspend_resume: sync_filesystems[0] end
+            bash-242290  [028] ..... 275711708300376: suspend_resume: freeze_processes[0] begin
+            bash-242290  [028] ..... 275711720895350: suspend_resume: freeze_processes[0] end
+            bash-242290  [028] ..... 275711720896860: suspend_resume: suspend_enter[1] end
+            bash-242290  [028] ..... 275711721005096: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [028] ..... 275711768560711: suspend_resume: dpm_prepare[2] end
+            bash-242290  [028] ..... 275711768588813: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 275715438914886: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 275715438952150: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275718137346065: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275718138747094: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [004] ..... 275720886751906: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 275720903171496: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [004] ..... 275722482303357: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [004] ..... 275722483006468: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275722489030320: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275722489035387: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 275725194396877: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 275725194405823: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 275725224627341: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 275725224649554: suspend_resume: console_resume_all[1] begin
+            bash-242290  [004] ..... 275725224854202: suspend_resume: console_resume_all[1] end
+            bash-242290  [004] ..... 275725224861661: suspend_resume: thaw_processes[0] begin
+            bash-242290  [000] ..... 275725237098852: suspend_resume: thaw_processes[0] end
+            bash-242290  [010] ...1. 275729753995717: tracing_mark_write: cycle control 5
+            bash-242290  [020] ..... 275729804793521: suspend_resume: suspend_enter[1] begin
+            bash-242290  [020] ..... 275729804796831: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [020] ..... 275729847261107: suspend_resume: sync_filesystems[0] end
+            bash-242290  [020] ..... 275729856938739: suspend_resume: freeze_processes[0] begin
+            bash-242290  [014] ..... 275729872000871: suspend_resume: freeze_processes[0] end
+            bash-242290  [014] ..... 275729872005442: suspend_resume: suspend_enter[1] end
+            bash-242290  [015] ..... 275729872116080: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [015] ..... 275729918618922: suspend_resume: dpm_prepare[2] end
+            bash-242290  [015] ..... 275729918640405: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [014] ..... 275730687009140: suspend_resume: dpm_suspend[2] end
+            bash-242290  [014] ..... 275730687064720: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275733381301016: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275733382522425: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [008] ..... 275736130582153: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] .l... 275736140221501: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [027] d..2. 275736140601881: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [004] dN.2. 275736141763913: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 275736141800146: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [001] dN.2. 275743490671681: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [006] ..... 275743491308369: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] .l... 275743500490619: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [011] ..... 275745076931661: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [011] ..... 275745077625667: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275745084460096: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275745084465313: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 275747796665784: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 275747796684645: suspend_resume: dpm_complete[16] begin
+            bash-242290  [004] ..... 275747826534905: suspend_resume: dpm_complete[16] end
+            bash-242290  [004] ..... 275747826560903: suspend_resume: console_resume_all[1] begin
+            bash-242290  [004] ..... 275747826720860: suspend_resume: console_resume_all[1] end
+            bash-242290  [004] ..... 275747826724529: suspend_resume: thaw_processes[0] begin
+            bash-242290  [027] ..... 275747840559427: suspend_resume: thaw_processes[0] end
+            bash-242290  [006] ...1. 275755395648714: tracing_mark_write: cycle control 6
+            bash-242290  [029] ..... 275755450491303: suspend_resume: suspend_enter[1] begin
+            bash-242290  [029] ..... 275755450495623: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [029] ..... 275755507756754: suspend_resume: sync_filesystems[0] end
+            bash-242290  [029] ..... 275755746782089: suspend_resume: freeze_processes[0] begin
+            bash-242290  [029] ..... 275755761897590: suspend_resume: freeze_processes[0] end
+            bash-242290  [029] ..... 275755761899553: suspend_resume: suspend_enter[1] end
+            bash-242290  [030] ..... 275755762034149: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [002] ..... 275755825512560: suspend_resume: dpm_prepare[2] end
+            bash-242290  [002] ..... 275755825551203: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 275756595645413: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 275756595672405: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275759292252403: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275759293652598: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [017] ..... 275762045930219: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 275762064396083: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 275763644902598: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 275763645666859: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [008] ..... 275763652350007: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [008] ..... 275763652355112: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 275766363113570: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 275766363133362: suspend_resume: dpm_complete[16] begin
+            bash-242290  [008] ..... 275766394377798: suspend_resume: dpm_complete[16] end
+            bash-242290  [008] ..... 275766394403687: suspend_resume: console_resume_all[1] begin
+            bash-242290  [008] ..... 275766394610556: suspend_resume: console_resume_all[1] end
+            bash-242290  [008] ..... 275766394614379: suspend_resume: thaw_processes[0] begin
+            bash-242290  [016] ..... 275766406890180: suspend_resume: thaw_processes[0] end
+            bash-242290  [010] ...1. 275770155622942: tracing_mark_write: cycle control 7
+            bash-242290  [022] ..... 275770210080165: suspend_resume: suspend_enter[1] begin
+            bash-242290  [022] ..... 275770210084992: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [022] ..... 275770244230325: suspend_resume: sync_filesystems[0] end
+            bash-242290  [022] ..... 275770267819893: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 275770281506196: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 275770281510143: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 275770281615571: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 275770422861932: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 275770422912168: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 275774097062718: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 275774097098680: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275776794110413: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275776795441225: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [021] ..... 275779551660797: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 275779728630805: suspend_resume: machine_suspend[1] begin
+            bash-242290  [004] ..... 275779729190255: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 275779729632245: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [003] d..2. 275779730003900: suspend_resume: timekeeping_freeze[3] begin
+          <idle>-0       [003] dN.2. 275779731289795: suspend_resume: timekeeping_freeze[3] end
+          <idle>-0       [003] d..2. 275779731360547: suspend_resume: timekeeping_freeze[3] begin
+          <idle>-0       [000] dN.2. 275779732504954: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275779732596525: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 275779767687174: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 275779768217985: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 275779778113312: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [004] ..... 275781214417591: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [004] ..... 275781215253497: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275781221752910: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275781221758383: suspend_resume: dpm_resume[16] begin
+            bash-242290  [010] ..... 275783934054612: suspend_resume: dpm_resume[16] end
+            bash-242290  [010] ..... 275783934064125: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 275783964309305: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 275783964332538: suspend_resume: console_resume_all[1] begin
+            bash-242290  [006] ..... 275783964542294: suspend_resume: console_resume_all[1] end
+            bash-242290  [006] ..... 275783964546133: suspend_resume: thaw_processes[0] begin
+            bash-242290  [006] ..... 275783977260671: suspend_resume: thaw_processes[0] end
+            bash-242290  [006] ...1. 275789987622325: tracing_mark_write: cycle control 8
+            bash-242290  [021] ..... 275790037541625: suspend_resume: suspend_enter[1] begin
+            bash-242290  [021] ..... 275790037544613: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [021] ..... 275790074292056: suspend_resume: sync_filesystems[0] end
+            bash-242290  [021] ..... 275790099426221: suspend_resume: freeze_processes[0] begin
+            bash-242290  [009] ..... 275790115379836: suspend_resume: freeze_processes[0] end
+            bash-242290  [009] ..... 275790115385632: suspend_resume: suspend_enter[1] end
+            bash-242290  [009] ..... 275790115633896: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [009] ..... 275790177118702: suspend_resume: dpm_prepare[2] end
+            bash-242290  [009] ..... 275790177148978: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [009] ..... 275790916656298: suspend_resume: dpm_suspend[2] end
+            bash-242290  [009] ..... 275790916675261: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [006] ..... 275793612299058: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [006] ..... 275793613710679: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [012] ..... 275796360287096: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 275796369953458: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [027] d..2. 275796370434889: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [006] dN.2. 275796371520861: suspend_resume: timekeeping_freeze[6] end
+          <idle>-0       [027] d..2. 275796371616122: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [000] dN.2. 275796372540791: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275796372625430: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 275796374027007: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275796374066571: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 275801550727543: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [006] ..... 275801551092291: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 275801560407079: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [010] ..... 275803137603482: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [006] ..... 275803138672930: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 275803145401582: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 275803145406258: suspend_resume: dpm_resume[16] begin
+            bash-242290  [015] ..... 275805855760140: suspend_resume: dpm_resume[16] end
+            bash-242290  [015] ..... 275805855779863: suspend_resume: dpm_complete[16] begin
+            bash-242290  [015] ..... 275805885801247: suspend_resume: dpm_complete[16] end
+            bash-242290  [015] ..... 275805885824337: suspend_resume: console_resume_all[1] begin
+            bash-242290  [015] ..... 275805886144016: suspend_resume: console_resume_all[1] end
+            bash-242290  [015] ..... 275805886147800: suspend_resume: thaw_processes[0] begin
+            bash-242290  [020] ..... 275805898877867: suspend_resume: thaw_processes[0] end
+            bash-242290  [008] ...1. 275812979513571: tracing_mark_write: cycle test 1
+            bash-242290  [020] ..... 275813027221897: suspend_resume: suspend_enter[1] begin
+            bash-242290  [020] ..... 275813027225476: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [020] ..... 275813082249589: suspend_resume: sync_filesystems[0] end
+            bash-242290  [020] ..... 275813322326225: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 275813337612835: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 275813337617056: suspend_resume: suspend_enter[1] end
+            bash-242290  [002] ..... 275813337743442: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [002] ..... 275813391984271: suspend_resume: dpm_prepare[2] end
+            bash-242290  [002] ..... 275813392004114: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 275814159340033: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 275814159360033: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275816835530737: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275816836591228: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [006] ..... 275819583576456: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 275819592776265: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [016] d..2. 275819593172030: suspend_resume: timekeeping_freeze[16] begin
+          <idle>-0       [009] dN.2. 275819594305375: suspend_resume: timekeeping_freeze[9] end
+          <idle>-0       [006] d..2. 275819594489971: suspend_resume: timekeeping_freeze[6] begin
+          <idle>-0       [014] dN.2. 275819595387723: suspend_resume: timekeeping_freeze[14] end
+          <idle>-0       [014] d..2. 275819595420664: suspend_resume: timekeeping_freeze[14] begin
+          <idle>-0       [001] dN.2. 275820903994804: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [006] ..... 275820904607666: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] .l... 275820914056257: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [010] ..... 275822495795469: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [006] ..... 275822496880467: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 275822503747774: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 275822503753157: suspend_resume: dpm_resume[16] begin
+            bash-242290  [009] ..... 275825211580390: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=709728826
+            bash-242290  [009] ..... 275825211633863: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [010] ..... 275825218774941: suspend_resume: dpm_resume[16] end
+            bash-242290  [010] ..... 275825218781932: suspend_resume: dpm_complete[16] begin
+            bash-242290  [010] ..... 275825248551525: suspend_resume: dpm_complete[16] end
+            bash-242290  [010] ..... 275825248574370: suspend_resume: console_resume_all[1] begin
+            bash-242290  [010] ..... 275825249031214: suspend_resume: console_resume_all[1] end
+            bash-242290  [010] ..... 275825249036875: suspend_resume: thaw_processes[0] begin
+            bash-242290  [004] ..... 275825261577814: suspend_resume: thaw_processes[0] end
+            bash-242290  [026] ...1. 275832777772064: tracing_mark_write: cycle test 2
+            bash-242290  [012] ..... 275832826232343: suspend_resume: suspend_enter[1] begin
+            bash-242290  [012] ..... 275832826236369: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [012] ..... 275832927732960: suspend_resume: sync_filesystems[0] end
+            bash-242290  [012] ..... 275833168887173: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 275833182353600: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 275833182355421: suspend_resume: suspend_enter[1] end
+            bash-242290  [014] ..... 275833182443214: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [014] ..... 275833239149256: suspend_resume: dpm_prepare[2] end
+            bash-242290  [014] ..... 275833239175102: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [014] ..... 275836910448662: suspend_resume: dpm_suspend[2] end
+            bash-242290  [014] ..... 275836910479119: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [003] ..... 275839608277325: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [003] ..... 275839609627364: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [003] ..... 275842356863194: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 275842526749108: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [018] d..2. 275842527146281: suspend_resume: timekeeping_freeze[18] begin
+          <idle>-0       [000] dN.2. 275842528422140: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 275842528524893: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 275842529075174: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [008] d..2. 275842529466574: suspend_resume: timekeeping_freeze[8] begin
+          <idle>-0       [002] dN.2. 275842530709768: suspend_resume: timekeeping_freeze[2] end
+          <idle>-0       [002] d..2. 275842530802762: suspend_resume: timekeeping_freeze[2] begin
+          <idle>-0       [000] dN.2. 275842531896669: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [001] d..2. 275842532008287: suspend_resume: timekeeping_freeze[1] begin
+          <idle>-0       [000] dN.2. 275842533049777: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275842533063468: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 275842665980459: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 275842666602729: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] .l... 275842676523871: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [002] ..... 275844118360054: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [002] ..... 275844119119570: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [002] ..... 275844125771768: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [002] ..... 275844125776989: suspend_resume: dpm_resume[16] begin
+            bash-242290  [000] .l... 275846826094786: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=289694246
+            bash-242290  [000] .l... 275846826137118: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [005] ..... 275846833486405: suspend_resume: dpm_resume[16] end
+            bash-242290  [005] ..... 275846833494067: suspend_resume: dpm_complete[16] begin
+            bash-242290  [005] ..... 275846863739747: suspend_resume: dpm_complete[16] end
+            bash-242290  [005] ..... 275846863762080: suspend_resume: console_resume_all[1] begin
+            bash-242290  [008] ..... 275846865704922: suspend_resume: console_resume_all[1] end
+            bash-242290  [008] ..... 275846865711442: suspend_resume: thaw_processes[0] begin
+            bash-242290  [007] ..... 275846880776419: suspend_resume: thaw_processes[0] end
+            bash-242290  [030] ...1. 275852902452107: tracing_mark_write: cycle test 3
+            bash-242290  [022] ..... 275852959335710: suspend_resume: suspend_enter[1] begin
+            bash-242290  [022] ..... 275852959341276: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [022] ..... 275853067923304: suspend_resume: sync_filesystems[0] end
+            bash-242290  [022] ..... 275853312211869: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 275853325384070: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 275853325388513: suspend_resume: suspend_enter[1] end
+            bash-242290  [012] ..... 275853325680774: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [012] ..... 275853450359101: suspend_resume: dpm_prepare[2] end
+            bash-242290  [012] ..... 275853450394027: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 275854234364111: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 275854234390987: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275856927115657: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275856928434686: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [007] ..... 275859674974412: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [007] ..... 275859847205591: suspend_resume: machine_suspend[1] begin
+            bash-242290  [007] ..... 275859847842884: suspend_resume: machine_suspend[1] end
+            bash-242290  [007] ..... 275859848330389: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [027] d..2. 275859848592616: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [000] dN.2. 275865587207707: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [007] ..... 275865587652502: suspend_resume: machine_suspend[1] end
+            bash-242290  [007] ..... 275865590236593: suspend_resume: machine_suspend[1] begin
+            bash-242290  [007] ..... 275865590900749: suspend_resume: machine_suspend[1] end
+            bash-242290  [007] ..... 275865591341286: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [027] d..2. 275865591667535: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [004] dN.2. 275865592920267: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 275865593001431: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [000] dN.2. 275865594137675: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275865594218164: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 275866868223314: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [007] ..... 275866868808582: suspend_resume: machine_suspend[1] end
+            bash-242290  [007] ..... 275866877210405: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [004] ..... 275868315489524: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [004] ..... 275868316364984: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275868325233380: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275868325238991: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 275871036661447: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 275871036682845: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 275871066857325: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 275871066884022: suspend_resume: console_resume_all[1] begin
+            bash-242290  [006] ..... 275871067234687: suspend_resume: console_resume_all[1] end
+            bash-242290  [006] ..... 275871067240375: suspend_resume: thaw_processes[0] begin
+            bash-242290  [025] ..... 275871083448437: suspend_resume: thaw_processes[0] end
+            bash-242290  [008] ...1. 275878049625600: tracing_mark_write: cycle test 4
+            bash-242290  [019] ..... 275878097383140: suspend_resume: suspend_enter[1] begin
+            bash-242290  [019] ..... 275878097386166: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [019] ..... 275878149889721: suspend_resume: sync_filesystems[0] end
+            bash-242290  [016] ..... 275878383791083: suspend_resume: freeze_processes[0] begin
+            bash-242290  [005] ..... 275878399500878: suspend_resume: freeze_processes[0] end
+            bash-242290  [005] ..... 275878399504855: suspend_resume: suspend_enter[1] end
+            bash-242290  [005] ..... 275878399597622: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [005] ..... 275878446517872: suspend_resume: dpm_prepare[2] end
+            bash-242290  [005] ..... 275878446534026: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 275879240421562: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 275879240448778: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [005] ..... 275881936364076: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [005] ..... 275881937538036: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [005] ..... 275884657608331: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [005] ..... 275884832062771: suspend_resume: machine_suspend[1] begin
+            bash-242290  [005] ..... 275884832635990: suspend_resume: machine_suspend[1] end
+            bash-242290  [005] ..... 275884833087086: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [031] d..2. 275884833383370: suspend_resume: timekeeping_freeze[31] begin
+          <idle>-0       [004] dN.2. 275884834672319: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [031] d..2. 275884834798718: suspend_resume: timekeeping_freeze[31] begin
+          <idle>-0       [000] dN.2. 275884835881238: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [001] d..2. 275884836186131: suspend_resume: timekeeping_freeze[1] begin
+          <idle>-0       [000] dN.2. 275884837233616: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275884837246942: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 275886221585682: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [005] ..... 275886222166898: suspend_resume: machine_suspend[1] end
+            bash-242290  [005] ..... 275886231855755: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [005] ..... 275887669534944: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [005] ..... 275887670232289: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [005] ..... 275887676531986: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [005] ..... 275887676537110: suspend_resume: dpm_resume[16] begin
+            bash-242290  [011] ..... 275890375914193: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=804791584
+            bash-242290  [011] ..... 275890375967688: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [006] ..... 275890382388396: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 275890382395804: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 275890412554090: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 275890412577183: suspend_resume: console_resume_all[1] begin
+            bash-242290  [006] ..... 275890412743178: suspend_resume: console_resume_all[1] end
+            bash-242290  [006] ..... 275890412746054: suspend_resume: thaw_processes[0] begin
+            bash-242290  [025] ..... 275890425920613: suspend_resume: thaw_processes[0] end
+            bash-242290  [003] ...1. 275897648717820: tracing_mark_write: cycle test 5
+            bash-242290  [022] ..... 275897706054292: suspend_resume: suspend_enter[1] begin
+            bash-242290  [022] ..... 275897706057381: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [029] ..... 275897830323479: suspend_resume: sync_filesystems[0] end
+            bash-242290  [000] ..... 275898072449917: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 275898086563071: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 275898086565445: suspend_resume: suspend_enter[1] end
+            bash-242290  [004] ..... 275898086813933: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [004] ..... 275898212672154: suspend_resume: dpm_prepare[2] end
+            bash-242290  [004] ..... 275898212708833: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [001] ..... 275901887473905: suspend_resume: dpm_suspend[2] end
+            bash-242290  [001] ..... 275901887503054: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [014] ..... 275904585216559: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 275904648462450: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 275904648478066: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275904648487280: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 275907362669128: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 275907362720218: suspend_resume: dpm_complete[16] begin
+            bash-242290  [004] ..... 275907389221616: suspend_resume: dpm_complete[16] end
+            bash-242290  [004] ..... 275907389244964: suspend_resume: console_resume_all[1] begin
+            bash-242290  [004] ..... 275907389593840: suspend_resume: console_resume_all[1] end
+            bash-242290  [004] ..... 275907389597740: suspend_resume: thaw_processes[0] begin
+            bash-242290  [011] ..... 275907400736408: suspend_resume: thaw_processes[0] end
+            bash-242290  [015] ...1. 275912407880914: tracing_mark_write: cycle test 6
+            bash-242290  [027] ..... 275912472769863: suspend_resume: suspend_enter[1] begin
+            bash-242290  [027] ..... 275912472773370: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [027] ..... 275912544152017: suspend_resume: sync_filesystems[0] end
+            bash-242290  [027] ..... 275912558805520: suspend_resume: freeze_processes[0] begin
+            bash-242290  [029] ..... 275912574276723: suspend_resume: freeze_processes[0] end
+            bash-242290  [029] ..... 275912574281098: suspend_resume: suspend_enter[1] end
+            bash-242290  [029] ..... 275912574383615: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [000] ..... 275912635611729: suspend_resume: dpm_prepare[2] end
+            bash-242290  [000] ..... 275912635644759: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [008] ..... 275913394314285: suspend_resume: dpm_suspend[2] end
+            bash-242290  [008] ..... 275913394340410: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [000] ..... 275916088182925: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275916089604394: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [022] ..... 275918836461615: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 275918845989772: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [030] d..2. 275918846371846: suspend_resume: timekeeping_freeze[30] begin
+          <idle>-0       [004] dN.2. 275918847556306: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 275918847643281: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [000] dN.2. 275918848613019: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 275918848659462: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 275924928233536: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [006] ..... 275924928576835: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] .l... 275924937505086: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [010] ..... 275926514294149: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [010] ..... 275926515049129: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 275926522063706: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 275926522068012: suspend_resume: dpm_resume[16] begin
+            bash-242290  [007] ..... 275929235620055: suspend_resume: dpm_resume[16] end
+            bash-242290  [007] ..... 275929235638762: suspend_resume: dpm_complete[16] begin
+            bash-242290  [007] ..... 275929265625368: suspend_resume: dpm_complete[16] end
+            bash-242290  [007] ..... 275929265649269: suspend_resume: console_resume_all[1] begin
+            bash-242290  [007] ..... 275929266167700: suspend_resume: console_resume_all[1] end
+            bash-242290  [007] ..... 275929266173401: suspend_resume: thaw_processes[0] begin
+            bash-242290  [016] ..... 275929279341556: suspend_resume: thaw_processes[0] end
+            bash-242290  [023] ...1. 275934651739144: tracing_mark_write: cycle test 7
+            bash-242290  [024] ..... 275934706042842: suspend_resume: suspend_enter[1] begin
+            bash-242290  [024] ..... 275934706047463: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [024] ..... 275934744229111: suspend_resume: sync_filesystems[0] end
+            bash-242290  [024] ..... 275934757497171: suspend_resume: freeze_processes[0] begin
+            bash-242290  [000] ..... 275934772904690: suspend_resume: freeze_processes[0] end
+            bash-242290  [000] ..... 275934772910350: suspend_resume: suspend_enter[1] end
+            bash-242290  [000] ..... 275934773005351: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 275934899940715: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 275934899972656: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 275935668091423: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 275935668116300: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [006] ..... 275938362755988: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [006] ..... 275938364022955: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [010] ..... 275941102686359: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 275941112652296: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [025] d..2. 275941113059810: suspend_resume: timekeeping_freeze[25] begin
+          <idle>-0       [008] dN.2. 275941114102774: suspend_resume: timekeeping_freeze[8] end
+          <idle>-0       [025] d..2. 275941114228685: suspend_resume: timekeeping_freeze[25] begin
+          <idle>-0       [001] dN.2. 275949119926230: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [006] ..... 275949120553840: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 275949128943748: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [010] ..... 275950706838150: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [010] ..... 275950707580583: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 275950714407348: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 275950714412220: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 275953426634954: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 275953426646280: suspend_resume: dpm_complete[16] begin
+            bash-242290  [003] ..... 275953457653084: suspend_resume: dpm_complete[16] end
+            bash-242290  [003] ..... 275953457676481: suspend_resume: console_resume_all[1] begin
+            bash-242290  [003] ..... 275953457948999: suspend_resume: console_resume_all[1] end
+            bash-242290  [003] ..... 275953457954303: suspend_resume: thaw_processes[0] begin
+            bash-242290  [019] ..... 275953471842341: suspend_resume: thaw_processes[0] end
+            bash-242290  [026] ...1. 275959087413204: tracing_mark_write: cycle test 8
+            bash-242290  [024] ..... 275959144980422: suspend_resume: suspend_enter[1] begin
+            bash-242290  [024] ..... 275959144985199: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [024] ..... 275959189489452: suspend_resume: sync_filesystems[0] end
+            bash-242290  [024] ..... 275959210035211: suspend_resume: freeze_processes[0] begin
+            bash-242290  [002] ..... 275959224236087: suspend_resume: freeze_processes[0] end
+            bash-242290  [002] ..... 275959224241987: suspend_resume: suspend_enter[1] end
+            bash-242290  [002] ..... 275959224347745: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [002] ..... 275959302646105: suspend_resume: dpm_prepare[2] end
+            bash-242290  [002] ..... 275959302667917: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [008] ..... 275962978501601: suspend_resume: dpm_suspend[2] end
+            bash-242290  [008] ..... 275962978538479: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [007] ..... 275965677390065: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [007] ..... 275965718874451: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [007] ..... 275968469532577: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [007] ..... 275968478936219: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [004] d..2. 275968479437988: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [014] dN.2. 275968480534564: suspend_resume: timekeeping_freeze[14] end
+          <idle>-0       [014] d..2. 275968480568397: suspend_resume: timekeeping_freeze[14] begin
+          <idle>-0       [000] dN.2. 275970881883024: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [007] ..... 275970882516361: suspend_resume: machine_suspend[1] end
+            bash-242290  [007] ..... 275970892355524: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [003] ..... 275972469276673: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [006] ..... 275972470283595: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 275972476391476: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 275972476396414: suspend_resume: dpm_resume[16] begin
+            bash-242290  [009] ..... 275975198950501: suspend_resume: dpm_resume[16] end
+            bash-242290  [009] ..... 275975198968019: suspend_resume: dpm_complete[16] begin
+            bash-242290  [009] ..... 275975228995099: suspend_resume: dpm_complete[16] end
+            bash-242290  [009] ..... 275975229018309: suspend_resume: console_resume_all[1] begin
+            bash-242290  [009] ..... 275975230301849: suspend_resume: console_resume_all[1] end
+            bash-242290  [009] ..... 275975230305324: suspend_resume: thaw_processes[0] begin
+            bash-242290  [015] ..... 275975242309684: suspend_resume: thaw_processes[0] end
+            bash-242290  [018] ...1. 275981590762871: tracing_mark_write: cycle test 9
+            bash-242290  [021] ..... 275981649265199: suspend_resume: suspend_enter[1] begin
+            bash-242290  [021] ..... 275981649269440: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [021] ..... 275981684268964: suspend_resume: sync_filesystems[0] end
+            bash-242290  [021] ..... 275981921253396: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 275981937225720: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 275981937230892: suspend_resume: suspend_enter[1] end
+            bash-242290  [002] ..... 275981937398781: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [005] ..... 275981983692128: suspend_resume: dpm_prepare[2] end
+            bash-242290  [005] ..... 275981983719572: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 275982726303358: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 275982726327007: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 275985424759005: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 275985426083214: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [005] ..... 275988174255824: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [005] ..... 275988344626939: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [029] d..2. 275988345082138: suspend_resume: timekeeping_freeze[29] begin
+          <idle>-0       [004] dN.2. 275988346360622: suspend_resume: timekeeping_freeze[4] end
+            bash-242290  [005] ..... 275988346489402: suspend_resume: machine_suspend[1] end
+            bash-242290  [005] ..... 275988347044046: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [006] d..2. 275988347407438: suspend_resume: timekeeping_freeze[6] begin
+          <idle>-0       [008] dN.2. 275988348483184: suspend_resume: timekeeping_freeze[8] end
+          <idle>-0       [008] d..2. 275988348548844: suspend_resume: timekeeping_freeze[8] begin
+          <idle>-0       [001] dN.2. 275990245706255: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [005] ..... 275990246304130: suspend_resume: machine_suspend[1] end
+            bash-242290  [005] ..... 275990256516023: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [005] ..... 275991692105908: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [005] ..... 275991692778535: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [000] ..... 275991698698248: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [000] ..... 275991698702311: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] .l... 275994409127989: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10799 nsec=12726274
+            bash-242290  [004] .l... 275994409179448: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [008] ..... 275994416367845: suspend_resume: dpm_resume[16] end
+            bash-242290  [008] ..... 275994416375875: suspend_resume: dpm_complete[16] begin
+            bash-242290  [004] ..... 275994449940637: suspend_resume: dpm_complete[16] end
+            bash-242290  [004] ..... 275994449964784: suspend_resume: console_resume_all[1] begin
+            bash-242290  [004] ..... 275994450455019: suspend_resume: console_resume_all[1] end
+            bash-242290  [004] ..... 275994450460159: suspend_resume: thaw_processes[0] begin
+            bash-242290  [029] ..... 275994463471050: suspend_resume: thaw_processes[0] end
+            bash-242290  [025] ...1. 276000237520830: tracing_mark_write: cycle test 10
+            bash-242290  [004] ..... 276000278757786: suspend_resume: suspend_enter[1] begin
+            bash-242290  [004] ..... 276000278760830: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [004] ..... 276000328894293: suspend_resume: sync_filesystems[0] end
+            bash-242290  [004] ..... 276000342120940: suspend_resume: freeze_processes[0] begin
+            bash-242290  [000] ..... 276000354971324: suspend_resume: freeze_processes[0] end
+            bash-242290  [000] ..... 276000354972196: suspend_resume: suspend_enter[1] end
+            bash-242290  [000] ..... 276000354997152: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [000] ..... 276000498843396: suspend_resume: dpm_prepare[2] end
+            bash-242290  [000] ..... 276000498874977: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [026] ..... 276001272698971: suspend_resume: dpm_suspend[2] end
+            bash-242290  [026] ..... 276001272729821: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276003968478243: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276003969678361: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [019] ..... 276006713615294: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276006722775723: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [029] d..2. 276006723197005: suspend_resume: timekeeping_freeze[29] begin
+          <idle>-0       [001] dN.2. 276009599085709: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 276009599718566: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276009607593889: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [012] ..... 276011191079625: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [012] ..... 276011191852808: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [012] ..... 276011198532818: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [012] ..... 276011198538086: suspend_resume: dpm_resume[16] begin
+            bash-242290  [011] ..... 276013916673183: suspend_resume: dpm_resume[16] end
+            bash-242290  [011] ..... 276013916688102: suspend_resume: dpm_complete[16] begin
+            bash-242290  [011] ..... 276013946767686: suspend_resume: dpm_complete[16] end
+            bash-242290  [011] ..... 276013946790055: suspend_resume: console_resume_all[1] begin
+            bash-242290  [012] ..... 276013947217453: suspend_resume: console_resume_all[1] end
+            bash-242290  [012] ..... 276013947223509: suspend_resume: thaw_processes[0] begin
+            bash-242290  [017] ..... 276013961139737: suspend_resume: thaw_processes[0] end
+            bash-242290  [000] ...1. 276020053032183: tracing_mark_write: cycle test 11
+            bash-242290  [021] ..... 276020121871250: suspend_resume: suspend_enter[1] begin
+            bash-242290  [021] ..... 276020121875400: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [021] ..... 276020180285837: suspend_resume: sync_filesystems[0] end
+            bash-242290  [021] ..... 276020415640083: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 276020430449783: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 276020430454221: suspend_resume: suspend_enter[1] end
+            bash-242290  [004] ..... 276020430792842: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [004] ..... 276022823686857: suspend_resume: dpm_prepare[2] end
+            bash-242290  [004] ..... 276022823732753: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [001] ..... 276026499581854: suspend_resume: dpm_suspend[2] end
+            bash-242290  [001] ..... 276026499617527: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [008] ..... 276029195131369: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [024] ..... 276029258922032: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [024] ..... 276029258937613: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [024] ..... 276029258946685: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 276031975171335: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 276031975180444: suspend_resume: dpm_complete[16] begin
+            bash-242290  [008] ..... 276032003399154: suspend_resume: dpm_complete[16] end
+            bash-242290  [008] ..... 276032003422157: suspend_resume: console_resume_all[1] begin
+            bash-242290  [008] ..... 276032003868668: suspend_resume: console_resume_all[1] end
+            bash-242290  [008] ..... 276032003873834: suspend_resume: thaw_processes[0] begin
+            bash-242290  [025] ..... 276032016070485: suspend_resume: thaw_processes[0] end
+            bash-242290  [028] ...1. 276035015715152: tracing_mark_write: cycle test 12
+            bash-242290  [026] ..... 276035080658759: suspend_resume: suspend_enter[1] begin
+            bash-242290  [026] ..... 276035080664088: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [026] ..... 276035135064834: suspend_resume: sync_filesystems[0] end
+            bash-242290  [026] ..... 276035142416948: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 276035157515708: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 276035157521506: suspend_resume: suspend_enter[1] end
+            bash-242290  [004] ..... 276035157629100: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [004] ..... 276035292718173: suspend_resume: dpm_prepare[2] end
+            bash-242290  [004] ..... 276035292755186: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 276036047017847: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 276036047045677: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [006] ..... 276038743238718: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [006] ..... 276038744587158: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [010] ..... 276041493315118: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 276041510221961: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276043088253003: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 276043088935965: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [009] ..... 276043095840956: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [009] ..... 276043095845411: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 276045808876255: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 276045808887477: suspend_resume: dpm_complete[16] begin
+            bash-242290  [004] ..... 276045839542558: suspend_resume: dpm_complete[16] end
+            bash-242290  [004] ..... 276045839569889: suspend_resume: console_resume_all[1] begin
+            bash-242290  [004] ..... 276045840145057: suspend_resume: console_resume_all[1] end
+            bash-242290  [004] ..... 276045840150914: suspend_resume: thaw_processes[0] begin
+            bash-242290  [016] ..... 276045851699329: suspend_resume: thaw_processes[0] end
+            bash-242290  [031] ...1. 276052958783259: tracing_mark_write: cycle test 13
+            bash-242290  [021] ..... 276053019791079: suspend_resume: suspend_enter[1] begin
+            bash-242290  [021] ..... 276053019795028: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [022] ..... 276053100337219: suspend_resume: sync_filesystems[0] end
+            bash-242290  [021] ..... 276053344667882: suspend_resume: freeze_processes[0] begin
+            bash-242290  [014] ..... 276053360015539: suspend_resume: freeze_processes[0] end
+            bash-242290  [014] ..... 276053360020646: suspend_resume: suspend_enter[1] end
+            bash-242290  [014] ..... 276053360116647: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [014] ..... 276053484502331: suspend_resume: dpm_prepare[2] end
+            bash-242290  [014] ..... 276053484537144: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [000] ..... 276054234428032: suspend_resume: dpm_suspend[2] end
+            bash-242290  [000] ..... 276054234450082: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [015] ..... 276056932681657: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276056934205903: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [001] ..... 276059682388611: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276059692188057: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [028] d..2. 276059692573354: suspend_resume: timekeeping_freeze[28] begin
+          <idle>-0       [028] dN.2. 276059693794172: suspend_resume: timekeeping_freeze[28] end
+          <idle>-0       [028] d..2. 276059693853128: suspend_resume: timekeeping_freeze[28] begin
+          <idle>-0       [001] dN.2. 276060401567755: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 276060402248665: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276060410515840: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276061989555349: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [006] ..... 276061990485083: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 276061996696665: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 276061996700760: suspend_resume: dpm_resume[16] begin
+            bash-242290  [015] .l... 276064698837396: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=465587470
+            bash-242290  [015] .l... 276064698897445: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [018] ..... 276064706332926: suspend_resume: dpm_resume[16] end
+            bash-242290  [018] ..... 276064706341662: suspend_resume: dpm_complete[16] begin
+            bash-242290  [018] ..... 276064736210436: suspend_resume: dpm_complete[16] end
+            bash-242290  [018] ..... 276064736228756: suspend_resume: console_resume_all[1] begin
+            bash-242290  [018] ..... 276064736652606: suspend_resume: console_resume_all[1] end
+            bash-242290  [018] ..... 276064736657209: suspend_resume: thaw_processes[0] begin
+            bash-242290  [012] ..... 276064750846708: suspend_resume: thaw_processes[0] end
+            bash-242290  [020] ...1. 276072039171913: tracing_mark_write: cycle test 14
+            bash-242290  [004] ..... 276072109326682: suspend_resume: suspend_enter[1] begin
+            bash-242290  [004] ..... 276072109331200: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [008] ..... 276072241276717: suspend_resume: sync_filesystems[0] end
+            bash-242290  [008] ..... 276072481850645: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276072493475411: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276072493477140: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276072493571949: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276072551388077: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276072551408922: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [009] ..... 276076222848300: suspend_resume: dpm_suspend[2] end
+            bash-242290  [009] ..... 276076222876945: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [009] ..... 276078917843676: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [009] ..... 276078981348967: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [009] ..... 276078981362437: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [009] ..... 276078981368954: suspend_resume: dpm_resume[16] begin
+            bash-242290  [009] ..... 276081695750928: suspend_resume: dpm_resume[16] end
+            bash-242290  [009] ..... 276081695761130: suspend_resume: dpm_complete[16] begin
+            bash-242290  [009] ..... 276081722387558: suspend_resume: dpm_complete[16] end
+            bash-242290  [009] ..... 276081722410764: suspend_resume: console_resume_all[1] begin
+            bash-242290  [010] ..... 276081722750493: suspend_resume: console_resume_all[1] end
+            bash-242290  [010] ..... 276081722756447: suspend_resume: thaw_processes[0] begin
+            bash-242290  [016] ..... 276081735087798: suspend_resume: thaw_processes[0] end
+            bash-242290  [010] ...1. 276084662433823: tracing_mark_write: cycle test 15
+            bash-242290  [012] ..... 276084725808494: suspend_resume: suspend_enter[1] begin
+            bash-242290  [012] ..... 276084725813211: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [012] ..... 276084851942215: suspend_resume: sync_filesystems[0] end
+            bash-242290  [012] ..... 276084863838354: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276084878549108: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276084878551476: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276084878656464: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276085000691590: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276085000721454: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 276085775307889: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 276085775329884: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [002] ..... 276088471906424: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [002] ..... 276088473108269: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [015] ..... 276091223042559: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276091234313938: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [028] d..2. 276091234743589: suspend_resume: timekeeping_freeze[28] begin
+          <idle>-0       [004] dN.2. 276091236053754: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [028] d..2. 276091236142278: suspend_resume: timekeeping_freeze[28] begin
+          <idle>-0       [000] dN.2. 276096689216306: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 276096689769668: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276096699240864: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [012] ..... 276098275563864: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [012] ..... 276098276286860: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [012] ..... 276098282896914: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [012] ..... 276098282901708: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 276100993577953: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 276100993588323: suspend_resume: dpm_complete[16] begin
+            bash-242290  [017] ..... 276101024204451: suspend_resume: dpm_complete[16] end
+            bash-242290  [017] ..... 276101024227261: suspend_resume: console_resume_all[1] begin
+            bash-242290  [017] ..... 276101024536353: suspend_resume: console_resume_all[1] end
+            bash-242290  [017] ..... 276101024540285: suspend_resume: thaw_processes[0] begin
+            bash-242290  [022] ..... 276101037463823: suspend_resume: thaw_processes[0] end
+            bash-242290  [004] ...1. 276107142270591: tracing_mark_write: cycle test 16
+            bash-242290  [029] ..... 276107199208029: suspend_resume: suspend_enter[1] begin
+            bash-242290  [029] ..... 276107199211134: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [029] ..... 276107248039394: suspend_resume: sync_filesystems[0] end
+            bash-242290  [029] ..... 276107485676036: suspend_resume: freeze_processes[0] begin
+            bash-242290  [002] ..... 276107500416909: suspend_resume: freeze_processes[0] end
+            bash-242290  [002] ..... 276107500421465: suspend_resume: suspend_enter[1] end
+            bash-242290  [004] ..... 276107500550489: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [004] ..... 276107627228847: suspend_resume: dpm_prepare[2] end
+            bash-242290  [004] ..... 276107627260381: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 276108361343525: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 276108361369194: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276111057944023: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] .l... 276111059173946: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [019] ..... 276113803211685: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276113814527740: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [027] d..2. 276113814912655: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [004] dN.2. 276113816141054: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 276113816178716: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [004] dN.2. 276113817103337: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 276113817125009: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [001] dN.2. 276120880871371: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 276120881440541: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276120891353413: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276122463818776: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 276122464545150: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [008] ..... 276122471191209: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [008] ..... 276122471196265: suspend_resume: dpm_resume[16] begin
+            bash-242290  [005] ..... 276125180667589: suspend_resume: dpm_resume[16] end
+            bash-242290  [005] ..... 276125180682438: suspend_resume: dpm_complete[16] begin
+            bash-242290  [005] ..... 276125210369808: suspend_resume: dpm_complete[16] end
+            bash-242290  [005] ..... 276125210394317: suspend_resume: console_resume_all[1] begin
+            bash-242290  [002] ..... 276125210725179: suspend_resume: console_resume_all[1] end
+            bash-242290  [002] ..... 276125210730711: suspend_resume: thaw_processes[0] begin
+            bash-242290  [030] ..... 276125223007219: suspend_resume: thaw_processes[0] end
+            bash-242290  [012] ...1. 276130614103082: tracing_mark_write: cycle test 17
+            bash-242290  [006] ..... 276130671265848: suspend_resume: suspend_enter[1] begin
+            bash-242290  [006] ..... 276130671268819: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [006] ..... 276130710316315: suspend_resume: sync_filesystems[0] end
+            bash-242290  [006] ..... 276130727582292: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276130741609496: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276130741611475: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276130741965184: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276130868131339: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276130868169009: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [008] ..... 276134545420569: suspend_resume: dpm_suspend[2] end
+            bash-242290  [008] ..... 276134545457254: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [008] ..... 276137243804612: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276137245544243: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [020] ..... 276139993607486: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [002] ..... 276140168631223: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [029] d..2. 276140169030016: suspend_resume: timekeeping_freeze[29] begin
+          <idle>-0       [000] dN.2. 276140170345884: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [002] ..... 276140170680823: suspend_resume: machine_suspend[1] end
+            bash-242290  [002] ..... 276140171194380: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [005] d..2. 276140171575234: suspend_resume: timekeeping_freeze[5] begin
+          <idle>-0       [004] dN.2. 276140172650924: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 276140172687653: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [001] dN.2. 276140234180240: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [002] ..... 276140234781276: suspend_resume: machine_suspend[1] end
+            bash-242290  [002] ..... 276140244643936: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [002] ..... 276141686364758: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [002] ..... 276141687250377: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 276141694184448: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 276141694191260: suspend_resume: dpm_resume[16] begin
+            bash-242290  [008] ..... 276144398441281: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=253790770
+            bash-242290  [008] ..... 276144398480988: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [008] ..... 276144405221943: suspend_resume: dpm_resume[16] end
+            bash-242290  [008] ..... 276144405227528: suspend_resume: dpm_complete[16] begin
+            bash-242290  [008] ..... 276144434999318: suspend_resume: dpm_complete[16] end
+            bash-242290  [008] ..... 276144435024666: suspend_resume: console_resume_all[1] begin
+            bash-242290  [016] ..... 276144435225507: suspend_resume: console_resume_all[1] end
+            bash-242290  [016] ..... 276144435230494: suspend_resume: thaw_processes[0] begin
+            bash-242290  [031] ..... 276144448327158: suspend_resume: thaw_processes[0] end
+            bash-242290  [010] ...1. 276151621249828: tracing_mark_write: cycle test 18
+            bash-242290  [021] ..... 276151688551079: suspend_resume: suspend_enter[1] begin
+            bash-242290  [021] ..... 276151688555456: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [021] ..... 276151820744432: suspend_resume: sync_filesystems[0] end
+            bash-242290  [010] ..... 276152057229864: suspend_resume: freeze_processes[0] begin
+            bash-242290  [010] ..... 276152070339648: suspend_resume: freeze_processes[0] end
+            bash-242290  [010] ..... 276152070341764: suspend_resume: suspend_enter[1] end
+            bash-242290  [010] ..... 276152070448512: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [010] ..... 276152194719812: suspend_resume: dpm_prepare[2] end
+            bash-242290  [010] ..... 276152194737479: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 276152969964758: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 276152969987007: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [002] ..... 276155666728012: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276155668429725: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [007] ..... 276158408679558: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [007] ..... 276158424834109: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [001] ..... 276160008813508: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [011] ..... 276160010177496: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [011] ..... 276160016818133: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [011] ..... 276160016823108: suspend_resume: dpm_resume[16] begin
+            bash-242290  [005] ..... 276162724587975: suspend_resume: dpm_resume[16] end
+            bash-242290  [005] ..... 276162724607330: suspend_resume: dpm_complete[16] begin
+            bash-242290  [005] ..... 276162754400591: suspend_resume: dpm_complete[16] end
+            bash-242290  [005] ..... 276162754423407: suspend_resume: console_resume_all[1] begin
+            bash-242290  [011] ..... 276162754876156: suspend_resume: console_resume_all[1] end
+            bash-242290  [011] ..... 276162754883842: suspend_resume: thaw_processes[0] begin
+            bash-242290  [019] ..... 276162767313899: suspend_resume: thaw_processes[0] end
+            bash-242290  [031] ...1. 276167141739803: tracing_mark_write: cycle test 19
+            bash-242290  [002] ..... 276167200147827: suspend_resume: suspend_enter[1] begin
+            bash-242290  [002] ..... 276167200150937: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [004] ..... 276167286264304: suspend_resume: sync_filesystems[0] end
+            bash-242290  [004] ..... 276167294974021: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 276167309064054: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 276167309066524: suspend_resume: suspend_enter[1] end
+            bash-242290  [004] ..... 276167309499305: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [004] ..... 276167384574765: suspend_resume: dpm_prepare[2] end
+            bash-242290  [004] ..... 276167384605855: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 276168159547971: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 276168159574734: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [006] ..... 276170857037678: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [006] ..... 276170858307927: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [008] ..... 276173608642820: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [002] ..... 276173779785529: suspend_resume: machine_suspend[1] begin
+            bash-242290  [002] ..... 276173780413911: suspend_resume: machine_suspend[1] end
+            bash-242290  [002] ..... 276173781021589: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [025] d..2. 276173781376873: suspend_resume: timekeeping_freeze[25] begin
+          <idle>-0       [025] dN.2. 276173782668961: suspend_resume: timekeeping_freeze[25] end
+          <idle>-0       [025] d..2. 276173782762951: suspend_resume: timekeeping_freeze[25] begin
+          <idle>-0       [000] dN.2. 276173783867031: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [001] d..2. 276173783977657: suspend_resume: timekeeping_freeze[1] begin
+          <idle>-0       [000] dN.2. 276173785052069: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276173785066433: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 276181360007728: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [002] ..... 276181360387021: suspend_resume: machine_suspend[1] end
+            bash-242290  [005] ..... 276181370651855: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [005] ..... 276182808623664: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [005] ..... 276182809557897: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [005] ..... 276182816182268: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [005] ..... 276182816186885: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] .l... 276185524741939: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] .l... 276185524750889: suspend_resume: dpm_complete[16] begin
+            bash-242290  [004] ..... 276185554548472: suspend_resume: dpm_complete[16] end
+            bash-242290  [004] ..... 276185554572142: suspend_resume: console_resume_all[1] begin
+            bash-242290  [019] ..... 276185555218460: suspend_resume: console_resume_all[1] end
+            bash-242290  [019] ..... 276185555225750: suspend_resume: thaw_processes[0] begin
+            bash-242290  [009] ..... 276185567022324: suspend_resume: thaw_processes[0] end
+            bash-242290  [028] ...1. 276192301113739: tracing_mark_write: cycle test 20
+            bash-242290  [031] ..... 276192363770492: suspend_resume: suspend_enter[1] begin
+            bash-242290  [031] ..... 276192363774429: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [031] ..... 276192406182672: suspend_resume: sync_filesystems[0] end
+            bash-242290  [031] ..... 276192650216090: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276192665600032: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276192665607290: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276192665726994: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276192792758761: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276192792790665: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [010] ..... 276196462438248: suspend_resume: dpm_suspend[2] end
+            bash-242290  [010] ..... 276196462469965: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [007] ..... 276199159264416: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [007] ..... 276199160548238: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [008] ..... 276201909421174: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 276201926801092: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [007] ..... 276203505620404: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [007] ..... 276203506414803: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [007] ..... 276203513371717: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [007] ..... 276203513377145: suspend_resume: dpm_resume[16] begin
+            bash-242290  [006] ..... 276206220940168: suspend_resume: dpm_resume[16] end
+            bash-242290  [006] ..... 276206220951028: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 276206250980374: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 276206251009190: suspend_resume: console_resume_all[1] begin
+            bash-242290  [013] ..... 276206251288952: suspend_resume: console_resume_all[1] end
+            bash-242290  [013] ..... 276206251294214: suspend_resume: thaw_processes[0] begin
+            bash-242290  [013] ..... 276206262515955: suspend_resume: thaw_processes[0] end
+            bash-242290  [008] ...1. 276210442497350: tracing_mark_write: cycle test 21
+            bash-242290  [018] ..... 276210504510830: suspend_resume: suspend_enter[1] begin
+            bash-242290  [018] ..... 276210504515138: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [018] ..... 276210591697721: suspend_resume: sync_filesystems[0] end
+            bash-242290  [024] ..... 276210607066719: suspend_resume: freeze_processes[0] begin
+            bash-242290  [008] ..... 276210622224563: suspend_resume: freeze_processes[0] end
+            bash-242290  [008] ..... 276210622227989: suspend_resume: suspend_enter[1] end
+            bash-242290  [008] ..... 276210622360191: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [008] ..... 276210747358928: suspend_resume: dpm_prepare[2] end
+            bash-242290  [008] ..... 276210747396665: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 276211524203952: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 276211524228987: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276214220464634: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276214221790272: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [017] ..... 276216967472564: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276216978471113: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [031] d..2. 276216978873235: suspend_resume: timekeeping_freeze[31] begin
+          <idle>-0       [000] dN.2. 276216980000204: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276216980038748: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 276216981011795: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [001] d..2. 276216981118550: suspend_resume: timekeeping_freeze[1] begin
+          <idle>-0       [000] dN.2. 276217152132877: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 276217152508432: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276217310333087: suspend_resume: machine_suspend[1] begin
+            bash-242290  [004] ..... 276217311008903: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276217311598847: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [023] d..2. 276217311933136: suspend_resume: timekeeping_freeze[23] begin
+          <idle>-0       [014] dN.2. 276217313218548: suspend_resume: timekeeping_freeze[14] end
+          <idle>-0       [014] d..2. 276217313274277: suspend_resume: timekeeping_freeze[14] begin
+          <idle>-0       [000] dN.2. 276217314352258: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [001] d..2. 276217314452125: suspend_resume: timekeeping_freeze[1] begin
+          <idle>-0       [000] dN.2. 276217315506761: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276217315519215: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 276224905118875: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [004] ..... 276224905718980: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276224915205388: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [012] ..... 276226350607915: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [006] ..... 276226351380883: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 276226358761585: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 276226358766962: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] .l... 276229067969818: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] .l... 276229067980156: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 276229098406290: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 276229098429527: suspend_resume: console_resume_all[1] begin
+            bash-242290  [017] ..... 276229098732589: suspend_resume: console_resume_all[1] end
+            bash-242290  [017] ..... 276229098738767: suspend_resume: thaw_processes[0] begin
+            bash-242290  [012] ..... 276229111091178: suspend_resume: thaw_processes[0] end
+            bash-242290  [006] ...1. 276234635603857: tracing_mark_write: cycle test 22
+            bash-242290  [018] ..... 276234694925660: suspend_resume: suspend_enter[1] begin
+            bash-242290  [018] ..... 276234694928924: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [018] ..... 276234737550846: suspend_resume: sync_filesystems[0] end
+            bash-242290  [018] ..... 276234763096166: suspend_resume: freeze_processes[0] begin
+            bash-242290  [025] ..... 276234779027051: suspend_resume: freeze_processes[0] end
+            bash-242290  [025] ..... 276234779031878: suspend_resume: suspend_enter[1] end
+            bash-242290  [026] ..... 276234779164539: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [026] ..... 276234903906931: suspend_resume: dpm_prepare[2] end
+            bash-242290  [026] ..... 276234903947418: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 276235657584510: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 276235657607463: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276238354102412: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276238355469138: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [006] ..... 276241100675701: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 276241110871136: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [028] d..2. 276241111277188: suspend_resume: timekeeping_freeze[28] begin
+          <idle>-0       [010] dN.2. 276241112518813: suspend_resume: timekeeping_freeze[10] end
+          <idle>-0       [010] d..2. 276241112556715: suspend_resume: timekeeping_freeze[10] begin
+          <idle>-0       [008] dN.2. 276241113608839: suspend_resume: timekeeping_freeze[8] end
+          <idle>-0       [008] d..2. 276241113725403: suspend_resume: timekeeping_freeze[8] begin
+          <idle>-0       [000] dN.2. 276241114711227: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276241114807939: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 276249096820243: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [006] ..... 276249097242454: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 276249107196338: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276250685016779: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 276250685784711: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [008] ..... 276250692400894: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [008] ..... 276250692405452: suspend_resume: dpm_resume[16] begin
+            bash-242290  [002] ..... 276253400459889: suspend_resume: dpm_resume[16] end
+            bash-242290  [002] ..... 276253400469565: suspend_resume: dpm_complete[16] begin
+            bash-242290  [014] ..... 276253430662487: suspend_resume: dpm_complete[16] end
+            bash-242290  [014] ..... 276253430685348: suspend_resume: console_resume_all[1] begin
+            bash-242290  [007] ..... 276253430994692: suspend_resume: console_resume_all[1] end
+            bash-242290  [007] ..... 276253430999877: suspend_resume: thaw_processes[0] begin
+            bash-242290  [000] ..... 276253444185669: suspend_resume: thaw_processes[0] end
+            bash-242290  [026] ...1. 276261002160344: tracing_mark_write: cycle test 23
+            bash-242290  [018] ..... 276261066460260: suspend_resume: suspend_enter[1] begin
+            bash-242290  [018] ..... 276261066465785: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [018] ..... 276261142708595: suspend_resume: sync_filesystems[0] end
+            bash-242290  [018] ..... 276261423783757: suspend_resume: freeze_processes[0] begin
+            bash-242290  [003] ..... 276261437990931: suspend_resume: freeze_processes[0] end
+            bash-242290  [003] ..... 276261437994867: suspend_resume: suspend_enter[1] end
+            bash-242290  [003] ..... 276261438090816: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [003] ..... 276261514380489: suspend_resume: dpm_prepare[2] end
+            bash-242290  [003] ..... 276261514411500: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 276265185024049: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 276265185049826: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276267881468905: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276267882835781: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [006] ..... 276270634708476: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 276270651907728: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [003] ..... 276272234428276: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [003] ..... 276272235055321: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [003] ..... 276272241943910: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [003] ..... 276272241949635: suspend_resume: dpm_resume[16] begin
+            bash-242290  [012] ..... 276274947482871: suspend_resume: dpm_resume[16] end
+            bash-242290  [012] ..... 276274947492865: suspend_resume: dpm_complete[16] begin
+            bash-242290  [012] ..... 276274978040909: suspend_resume: dpm_complete[16] end
+            bash-242290  [012] ..... 276274978064300: suspend_resume: console_resume_all[1] begin
+            bash-242290  [010] ..... 276274979748737: suspend_resume: console_resume_all[1] end
+            bash-242290  [010] ..... 276274979755678: suspend_resume: thaw_processes[0] begin
+            bash-242290  [005] ..... 276274991749353: suspend_resume: thaw_processes[0] end
+            bash-242290  [020] ...1. 276282048534326: tracing_mark_write: cycle test 24
+            bash-242290  [016] ..... 276282110968094: suspend_resume: suspend_enter[1] begin
+            bash-242290  [016] ..... 276282110972069: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [017] ..... 276282182468993: suspend_resume: sync_filesystems[0] end
+            bash-242290  [017] ..... 276282431126988: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276282446622463: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276282446626529: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276282446775557: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276282520038958: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276282520060786: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [002] ..... 276283294661439: suspend_resume: dpm_suspend[2] end
+            bash-242290  [002] ..... 276283294686970: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [015] ..... 276285989177682: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276285990685361: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [019] ..... 276288733522607: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] .l... 276288753476371: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276290333240083: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 276290334012266: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [006] ..... 276290340998214: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [006] ..... 276290341003175: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 276293051689341: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 276293051709760: suspend_resume: dpm_complete[16] begin
+            bash-242290  [006] ..... 276293082196707: suspend_resume: dpm_complete[16] end
+            bash-242290  [006] ..... 276293082221861: suspend_resume: console_resume_all[1] begin
+            bash-242290  [010] ..... 276293082608973: suspend_resume: console_resume_all[1] end
+            bash-242290  [010] ..... 276293082616584: suspend_resume: thaw_processes[0] begin
+            bash-242290  [007] ..... 276293094351572: suspend_resume: thaw_processes[0] end
+            bash-242290  [012] ...1. 276298992004838: tracing_mark_write: cycle test 25
+            bash-242290  [028] ..... 276299054188991: suspend_resume: suspend_enter[1] begin
+            bash-242290  [028] ..... 276299054192155: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [028] ..... 276299148960389: suspend_resume: sync_filesystems[0] end
+            bash-242290  [018] ..... 276299173485663: suspend_resume: freeze_processes[0] begin
+            bash-242290  [012] ..... 276299188835734: suspend_resume: freeze_processes[0] end
+            bash-242290  [012] ..... 276299188838786: suspend_resume: suspend_enter[1] end
+            bash-242290  [012] ..... 276299188929134: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [012] ..... 276299313634238: suspend_resume: dpm_prepare[2] end
+            bash-242290  [012] ..... 276299313666370: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 276300085890970: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 276300085915369: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276302782242118: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276302783525203: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [008] ..... 276305531181078: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276305703383439: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [019] d..2. 276305703778498: suspend_resume: timekeeping_freeze[19] begin
+          <idle>-0       [000] dN.2. 276305704983157: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 276305705340879: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276305705817299: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [031] d..2. 276305706190374: suspend_resume: timekeeping_freeze[31] begin
+          <idle>-0       [008] dN.2. 276305707427527: suspend_resume: timekeeping_freeze[8] end
+          <idle>-0       [008] d..2. 276305707514446: suspend_resume: timekeeping_freeze[8] begin
+          <idle>-0       [006] dN.2. 276305708492932: suspend_resume: timekeeping_freeze[6] end
+          <idle>-0       [000] d..2. 276305708658284: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 276305710045790: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276305710086228: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 276305711115652: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276305711132819: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 276309575776085: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 276309576169339: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276309586609069: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276311024710410: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 276311025510835: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 276311032477339: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 276311032483395: suspend_resume: dpm_resume[16] begin
+            bash-242290  [007] ..... 276313741450716: suspend_resume: dpm_resume[16] end
+            bash-242290  [007] ..... 276313741470498: suspend_resume: dpm_complete[16] begin
+            bash-242290  [007] ..... 276313771341210: suspend_resume: dpm_complete[16] end
+            bash-242290  [007] ..... 276313771364527: suspend_resume: console_resume_all[1] begin
+            bash-242290  [006] ..... 276313771751357: suspend_resume: console_resume_all[1] end
+            bash-242290  [006] ..... 276313771763654: suspend_resume: thaw_processes[0] begin
+            bash-242290  [028] ..... 276313783521060: suspend_resume: thaw_processes[0] end
+            bash-242290  [006] ...1. 276319301834159: tracing_mark_write: cycle test 26
+            bash-242290  [027] ..... 276319369170413: suspend_resume: suspend_enter[1] begin
+            bash-242290  [027] ..... 276319369174023: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [006] ..... 276319416057404: suspend_resume: sync_filesystems[0] end
+            bash-242290  [006] ..... 276319428474737: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276319442988730: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276319442989447: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276319443107989: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276319585449945: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276319585487694: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 276323262408216: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 276323262435991: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [002] ..... 276325960574917: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [002] ..... 276325961896811: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [002] ..... 276328715065989: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276328886541373: suspend_resume: machine_suspend[1] begin
+            bash-242290  [004] ..... 276328887101373: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276328887844221: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [023] d..2. 276328888190273: suspend_resume: timekeeping_freeze[23] begin
+          <idle>-0       [000] dN.2. 276328918805548: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [004] ..... 276328919354675: suspend_resume: machine_suspend[1] end
+            bash-242290  [004] ..... 276328929416693: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [007] ..... 276330369095851: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [007] ..... 276330369851750: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [007] ..... 276330377440287: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [007] ..... 276330377445932: suspend_resume: dpm_resume[16] begin
+            bash-242290  [008] ..... 276333081820564: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=245278158
+            bash-242290  [008] ..... 276333081862611: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => uinput_misc_init
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+ => do_syscall_64
+ => entry_SYSCALL_64_after_hwframe
+            bash-242290  [009] ..... 276333089498071: suspend_resume: dpm_resume[16] end
+            bash-242290  [009] ..... 276333089513870: suspend_resume: dpm_complete[16] begin
+            bash-242290  [009] ..... 276333119593214: suspend_resume: dpm_complete[16] end
+            bash-242290  [009] ..... 276333119623531: suspend_resume: console_resume_all[1] begin
+            bash-242290  [009] ..... 276333119784037: suspend_resume: console_resume_all[1] end
+            bash-242290  [009] ..... 276333119788231: suspend_resume: thaw_processes[0] begin
+            bash-242290  [005] ..... 276333132531241: suspend_resume: thaw_processes[0] end
+            bash-242290  [008] ...1. 276339590172709: tracing_mark_write: cycle test 27
+            bash-242290  [024] ..... 276339627362199: suspend_resume: suspend_enter[1] begin
+            bash-242290  [024] ..... 276339627364436: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [025] ..... 276339689885435: suspend_resume: sync_filesystems[0] end
+            bash-242290  [025] ..... 276339933379401: suspend_resume: freeze_processes[0] begin
+            bash-242290  [025] ..... 276339947025855: suspend_resume: freeze_processes[0] end
+            bash-242290  [025] ..... 276339947028009: suspend_resume: suspend_enter[1] end
+            bash-242290  [002] ..... 276339947153041: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [002] ..... 276340022862653: suspend_resume: dpm_prepare[2] end
+            bash-242290  [002] ..... 276340022888469: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [006] ..... 276340772584171: suspend_resume: dpm_suspend[2] end
+            bash-242290  [006] ..... 276340772611380: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [006] ..... 276343467797196: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [006] ..... 276343469132623: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [020] ..... 276346216405439: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 276346228883635: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [026] d..2. 276346229284954: suspend_resume: timekeeping_freeze[26] begin
+          <idle>-0       [000] dN.2. 276346401295627: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [006] ..... 276346401681965: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 276346562416212: suspend_resume: machine_suspend[1] begin
+            bash-242290  [006] ..... 276346563033732: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 276346563541079: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [027] d..2. 276346563874702: suspend_resume: timekeeping_freeze[27] begin
+          <idle>-0       [004] dN.2. 276346565128820: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 276346565180990: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [004] dN.2. 276346566404541: suspend_resume: timekeeping_freeze[4] end
+          <idle>-0       [004] d..2. 276346566432135: suspend_resume: timekeeping_freeze[4] begin
+          <idle>-0       [000] dN.2. 276353121120349: suspend_resume: timekeeping_freeze[0] end
+            bash-242290  [006] ..... 276353121727769: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 276353131962371: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [008] ..... 276354569741931: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [008] ..... 276354570489322: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [004] ..... 276354577567531: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [004] ..... 276354577572097: suspend_resume: dpm_resume[16] begin
+            bash-242290  [010] .l... 276357292691868: suspend_resume: dpm_resume[16] end
+            bash-242290  [010] .l... 276357292701849: suspend_resume: dpm_complete[16] begin
+            bash-242290  [010] ..... 276357322848448: suspend_resume: dpm_complete[16] end
+            bash-242290  [010] ..... 276357322870297: suspend_resume: console_resume_all[1] begin
+            bash-242290  [012] ..... 276357323472725: suspend_resume: console_resume_all[1] end
+            bash-242290  [012] ..... 276357323479001: suspend_resume: thaw_processes[0] begin
+            bash-242290  [024] ..... 276357337056278: suspend_resume: thaw_processes[0] end
+            bash-242290  [002] ...1. 276364059139288: tracing_mark_write: cycle test 28
+            bash-242290  [010] ..... 276364130682346: suspend_resume: suspend_enter[1] begin
+            bash-242290  [010] ..... 276364130684981: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [016] ..... 276364180814778: suspend_resume: sync_filesystems[0] end
+            bash-242290  [016] ..... 276364438541982: suspend_resume: freeze_processes[0] begin
+            bash-242290  [006] ..... 276364454447873: suspend_resume: freeze_processes[0] end
+            bash-242290  [006] ..... 276364454453122: suspend_resume: suspend_enter[1] end
+            bash-242290  [006] ..... 276364454870790: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [006] ..... 276364581806289: suspend_resume: dpm_prepare[2] end
+            bash-242290  [006] ..... 276364581842421: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [012] ..... 276365338002181: suspend_resume: dpm_suspend[2] end
+            bash-242290  [012] ..... 276365338026915: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [014] ..... 276368034522901: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276368036070000: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [002] ..... 276370786764388: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [004] ..... 276370803756800: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [017] ..... 276372382195128: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [017] ..... 276372382948328: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [002] ..... 276372389386254: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [002] ..... 276372389396503: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] ..... 276375105873899: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] ..... 276375105884154: suspend_resume: dpm_complete[16] begin
+            bash-242290  [014] ..... 276375135861271: suspend_resume: dpm_complete[16] end
+            bash-242290  [014] ..... 276375135883344: suspend_resume: console_resume_all[1] begin
+            bash-242290  [003] ..... 276375136420959: suspend_resume: console_resume_all[1] end
+            bash-242290  [003] ..... 276375136426835: suspend_resume: thaw_processes[0] begin
+            bash-242290  [007] ..... 276375149659627: suspend_resume: thaw_processes[0] end
+            bash-242290  [030] ...1. 276380759156987: tracing_mark_write: cycle test 29
+            bash-242290  [029] ..... 276380829021375: suspend_resume: suspend_enter[1] begin
+            bash-242290  [029] ..... 276380829026157: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [029] ..... 276380913142895: suspend_resume: sync_filesystems[0] end
+            bash-242290  [004] ..... 276380924942292: suspend_resume: freeze_processes[0] begin
+            bash-242290  [016] ..... 276380939119763: suspend_resume: freeze_processes[0] end
+            bash-242290  [016] ..... 276380939122518: suspend_resume: suspend_enter[1] end
+            bash-242290  [016] ..... 276380939518124: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [002] ..... 276380992855116: suspend_resume: dpm_prepare[2] end
+            bash-242290  [002] ..... 276380992875420: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [011] ..... 276384666636191: suspend_resume: dpm_suspend[2] end
+            bash-242290  [011] ..... 276384666664691: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [007] ..... 276387364142506: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [007] ..... 276387427837672: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [007] ..... 276387427850839: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [007] ..... 276387427858092: suspend_resume: dpm_resume[16] begin
+            bash-242290  [010] ..... 276390147504062: suspend_resume: dpm_resume[16] end
+            bash-242290  [010] ..... 276390147513890: suspend_resume: dpm_complete[16] begin
+            bash-242290  [005] ..... 276390174292282: suspend_resume: dpm_complete[16] end
+            bash-242290  [005] ..... 276390174315907: suspend_resume: console_resume_all[1] begin
+            bash-242290  [005] ..... 276390174837004: suspend_resume: console_resume_all[1] end
+            bash-242290  [005] ..... 276390174843288: suspend_resume: thaw_processes[0] begin
+            bash-242290  [002] ..... 276390186878263: suspend_resume: thaw_processes[0] end
+            bash-242290  [006] ...1. 276393779861781: tracing_mark_write: cycle test 30
+            bash-242290  [030] ..... 276393816289939: suspend_resume: suspend_enter[1] begin
+            bash-242290  [030] ..... 276393816292313: suspend_resume: sync_filesystems[0] begin
+            bash-242290  [030] ..... 276393924687788: suspend_resume: sync_filesystems[0] end
+            bash-242290  [030] ..... 276393934729681: suspend_resume: freeze_processes[0] begin
+            bash-242290  [004] ..... 276393949021742: suspend_resume: freeze_processes[0] end
+            bash-242290  [004] ..... 276393949026481: suspend_resume: suspend_enter[1] end
+            bash-242290  [004] ..... 276393949261941: suspend_resume: dpm_prepare[2] begin
+            bash-242290  [004] ..... 276394076437218: suspend_resume: dpm_prepare[2] end
+            bash-242290  [004] ..... 276394076476833: suspend_resume: dpm_suspend[2] begin
+            bash-242290  [004] ..... 276394822155846: suspend_resume: dpm_suspend[2] end
+            bash-242290  [004] ..... 276394822182119: suspend_resume: dpm_suspend_late[2] begin
+            bash-242290  [004] ..... 276397516657847: suspend_resume: dpm_suspend_late[2] end
+            bash-242290  [004] ..... 276397517926951: suspend_resume: dpm_suspend_noirq[2] begin
+            bash-242290  [006] ..... 276400257478874: suspend_resume: dpm_suspend_noirq[2] end
+            bash-242290  [006] ..... 276400429260438: suspend_resume: machine_suspend[1] begin
+            bash-242290  [006] ..... 276400429914705: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 276400430427088: suspend_resume: machine_suspend[1] begin
+          <idle>-0       [002] d..2. 276400430723564: suspend_resume: timekeeping_freeze[2] begin
+          <idle>-0       [000] dN.2. 276400432005334: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276400432052378: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [000] dN.2. 276400433109382: suspend_resume: timekeeping_freeze[0] end
+          <idle>-0       [000] d..2. 276400433129632: suspend_resume: timekeeping_freeze[0] begin
+          <idle>-0       [001] dN.2. 276403923596327: suspend_resume: timekeeping_freeze[1] end
+            bash-242290  [006] ..... 276403923989307: suspend_resume: machine_suspend[1] end
+            bash-242290  [006] ..... 276403934849281: suspend_resume: dpm_resume_noirq[16] begin
+            bash-242290  [005] ..... 276405377579970: suspend_resume: dpm_resume_noirq[16] end
+            bash-242290  [005] ..... 276405378222410: suspend_resume: dpm_resume_early[16] begin
+            bash-242290  [001] ..... 276405383983418: suspend_resume: dpm_resume_early[16] end
+            bash-242290  [001] ..... 276405383995266: suspend_resume: dpm_resume[16] begin
+            bash-242290  [004] .l... 276408093994085: suspend_resume: dpm_resume[16] end
+            bash-242290  [004] .l... 276408094014383: suspend_resume: dpm_complete[16] begin
+            bash-242290  [004] ..... 276408123788333: suspend_resume: dpm_complete[16] end
+            bash-242290  [004] ..... 276408123811353: suspend_resume: console_resume_all[1] begin
+            bash-242290  [004] ..... 276408124264172: suspend_resume: console_resume_all[1] end
+            bash-242290  [004] ..... 276408124270013: suspend_resume: thaw_processes[0] begin
+            bash-242290  [023] ..... 276408135716848: suspend_resume: thaw_processes[0] end

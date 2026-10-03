@@ -1,0 +1,149 @@
+kernel 7.3.0-rc5-rtcbase+  tz +0300  rtc-sys=10800  alarm +3..+6
+wake alarm: rtc0
+== control: 8 cycles, system clock not shifted
+control 1: alarm=+6 shift=0 d_sys=8.3 d_rtc=8 d_boottime=8.3 off_after=0.983 tk_freeze=2 rtc_inject=0
+control 2: alarm=+4 shift=0 d_sys=6.8 d_rtc=6 d_boottime=6.8 off_after=0.983 tk_freeze=1 rtc_inject=0
+control 3: alarm=+4 shift=0 d_sys=6.5 d_rtc=6 d_boottime=6.5 off_after=0.983 tk_freeze=3 rtc_inject=0
+control 4: alarm=+6 shift=0 d_sys=8.0 d_rtc=8 d_boottime=8.0 off_after=-0.001 tk_freeze=0 rtc_inject=0
+control 5: alarm=+6 shift=0 d_sys=8.2 d_rtc=8 d_boottime=8.2 off_after=0.983 tk_freeze=2 rtc_inject=0
+control 6: alarm=+3 shift=0 d_sys=4.8 d_rtc=5 d_boottime=4.8 off_after=-0.001 tk_freeze=0 rtc_inject=0
+control 7: alarm=+5 shift=0 d_sys=8.0 d_rtc=7 d_boottime=8.0 off_after=0.983 tk_freeze=1 rtc_inject=0
+control 8: alarm=+5 shift=0 d_sys=7.6 d_rtc=7 d_boottime=7.6 off_after=0.983 tk_freeze=1 rtc_inject=0
+== test: 30 cycles, system clock shifted +1.883 s relative to RTC (off_after seen: 0.983 0.983 0.983 0.983 0.983 0.983)
+test 1: alarm=+6 shift=1.883 d_sys=7.2 d_rtc=8 d_boottime=7.2 off_after=0.983 tk_freeze=4 rtc_inject=0
+test 2: alarm=+5 shift=1.883 d_sys=10803.9 d_rtc=7 d_boottime=10803.9 off_after=10799.282 tk_freeze=3 rtc_inject=1   <== JUMP
+test 3: alarm=+5 shift=1.883 d_sys=5.6 d_rtc=7 d_boottime=5.6 off_after=0.983 tk_freeze=1 rtc_inject=0
+test 4: alarm=+5 shift=1.883 d_sys=5.8 d_rtc=7 d_boottime=5.8 off_after=0.983 tk_freeze=3 rtc_inject=0
+test 5: alarm=+6 shift=1.883 d_sys=6.8 d_rtc=8 d_boottime=6.8 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 6: alarm=+3 shift=1.883 d_sys=4.8 d_rtc=5 d_boottime=4.8 off_after=1.882 tk_freeze=0 rtc_inject=0
+test 7: alarm=+3 shift=1.883 d_sys=4.9 d_rtc=5 d_boottime=4.9 off_after=1.882 tk_freeze=0 rtc_inject=0
+test 8: alarm=+3 shift=1.883 d_sys=5.9 d_rtc=5 d_boottime=5.9 off_after=1.882 tk_freeze=0 rtc_inject=0
+test 9: alarm=+6 shift=1.883 d_sys=6.8 d_rtc=8 d_boottime=6.8 off_after=0.983 tk_freeze=1 rtc_inject=0
+test 10: alarm=+4 shift=1.883 d_sys=10802.9 d_rtc=6 d_boottime=10802.9 off_after=10799.276 tk_freeze=3 rtc_inject=1   <== JUMP
+test 11: alarm=+4 shift=1.883 d_sys=6.0 d_rtc=6 d_boottime=6.0 off_after=1.882 tk_freeze=0 rtc_inject=0
+test 12: alarm=+6 shift=1.883 d_sys=7.1 d_rtc=8 d_boottime=7.1 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 13: alarm=+4 shift=1.883 d_sys=10803.0 d_rtc=6 d_boottime=10803.0 off_after=10799.280 tk_freeze=1 rtc_inject=1   <== JUMP
+test 14: alarm=+5 shift=1.883 d_sys=10804.3 d_rtc=7 d_boottime=10804.3 off_after=10799.275 tk_freeze=4 rtc_inject=1   <== JUMP
+test 15: alarm=+6 shift=1.883 d_sys=6.4 d_rtc=8 d_boottime=6.4 off_after=0.983 tk_freeze=4 rtc_inject=0
+test 16: alarm=+5 shift=1.883 d_sys=5.4 d_rtc=7 d_boottime=5.3 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 17: alarm=+5 shift=1.883 d_sys=6.0 d_rtc=7 d_boottime=6.0 off_after=0.988 tk_freeze=4 rtc_inject=0
+test 18: alarm=+6 shift=1.883 d_sys=7.0 d_rtc=8 d_boottime=7.0 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 19: alarm=+3 shift=1.883 d_sys=4.8 d_rtc=5 d_boottime=4.8 off_after=1.882 tk_freeze=0 rtc_inject=0
+test 20: alarm=+6 shift=1.883 d_sys=6.5 d_rtc=8 d_boottime=6.5 off_after=0.983 tk_freeze=5 rtc_inject=0
+test 21: alarm=+6 shift=1.883 d_sys=6.6 d_rtc=8 d_boottime=6.6 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 22: alarm=+6 shift=1.883 d_sys=6.2 d_rtc=8 d_boottime=6.2 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 23: alarm=+6 shift=1.883 d_sys=6.9 d_rtc=8 d_boottime=6.9 off_after=0.983 tk_freeze=3 rtc_inject=0
+test 24: alarm=+5 shift=1.883 d_sys=5.9 d_rtc=7 d_boottime=5.9 off_after=0.983 tk_freeze=1 rtc_inject=0
+test 25: alarm=+6 shift=1.883 d_sys=6.9 d_rtc=8 d_boottime=6.9 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 26: alarm=+6 shift=1.883 d_sys=6.6 d_rtc=8 d_boottime=6.6 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 27: alarm=+3 shift=1.883 d_sys=4.8 d_rtc=5 d_boottime=4.8 off_after=1.882 tk_freeze=0 rtc_inject=0
+test 28: alarm=+6 shift=1.883 d_sys=6.3 d_rtc=8 d_boottime=6.3 off_after=0.983 tk_freeze=11 rtc_inject=0
+test 29: alarm=+6 shift=1.883 d_sys=7.2 d_rtc=8 d_boottime=7.2 off_after=0.983 tk_freeze=2 rtc_inject=0
+test 30: alarm=+6 shift=1.883 d_sys=7.0 d_rtc=8 d_boottime=7.0 off_after=0.983 tk_freeze=2 rtc_inject=0
+== result: control jumps=0/8  test jumps=4/30
+== kprobe hits on timekeeping_inject_sleeptime64:
+            bash-8746    [004] ..... 593477091309: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10797 nsec=806956890
+            bash-8746    [004] ..... 593477130475: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => 0xffffffffc24d00da
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+--
+            bash-8746    [018] ..... 755576298493: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=47960134
+            bash-8746    [018] ..... 755576344426: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => 0xffffffffc24d00da
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+--
+            bash-8746    [014] ..... 818463688512: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=253911957
+            bash-8746    [014] ..... 818463739343: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => 0xffffffffc24d00da
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+--
+            bash-8746    [014] ..... 840248201179: inject: (timekeeping_inject_sleeptime64+0x4/0x70) sec=10798 nsec=191877891
+            bash-8746    [014] ..... 840248243511: <stack trace>
+ => kprobe_trace_func
+ => kprobe_dispatcher
+ => kprobe_ftrace_handler
+ => 0xffffffffc24d00da
+ => timekeeping_inject_sleeptime64
+ => rtc_resume
+ => dpm_run_callback
+ => device_resume
+ => dpm_resume
+ => dpm_resume_end
+ => suspend_devices_and_enter
+ => enter_state
+ => pm_suspend
+ => state_store
+ => kernfs_fop_write_iter
+ => vfs_write
+ => ksys_write
+== kernel messages:
+[  214.527375] Timekeeping suspended for 2.442 seconds
+[  225.240215] Timekeeping suspended for 10797.806 seconds
+[  232.527100] Timekeeping suspended for 0.720 seconds
+[  241.526961] Timekeeping suspended for 0.928 seconds
+[  251.526794] Timekeeping suspended for 0.832 seconds
+[  282.526323] Timekeeping suspended for 1.995 seconds
+[  292.245513] Timekeeping suspended for 10798.047 seconds
+[  308.525921] Timekeeping suspended for 2.323 seconds
+[  318.240632] Timekeeping suspended for 10798.253 seconds
+[  327.245471] Timekeeping suspended for 10798.191 seconds
+[  335.525516] Timekeeping suspended for 1.499 seconds
+[  344.525361] Timekeeping suspended for 0.527 seconds
+[  353.520896] Timekeeping suspended for 0.109 seconds
+[  363.525097] Timekeeping suspended for 2.339 seconds
+[  380.524828] Timekeeping suspended for 0.400 seconds
+[  390.524698] Timekeeping suspended for 1.764 seconds
+[  400.524539] Timekeeping suspended for 1.434 seconds
+[  410.524366] Timekeeping suspended for 0.930 seconds
+[  419.524252] Timekeeping suspended for 1.058 seconds
+[  429.524113] Timekeeping suspended for 2.050 seconds
+[  439.523934] Timekeeping suspended for 0.548 seconds
+[  456.523662] Timekeeping suspended for 1.427 seconds
+[  466.523518] Timekeeping suspended for 1.209 seconds
+[  476.523359] Timekeeping suspended for 2.198 seconds
+restored. log: repro-20261003-184656.log  trace: repro-20261003-184656.trace
